@@ -1,0 +1,42 @@
+<template>
+  <div
+    id="alert-border-5"
+    class="flex p-4 bg-gray-100 border-t-4 border-gray-700 dark:bg-gray-500"
+    role="alert"
+  >
+    <span class="mr-3 text-xl"
+      ><Icon icon="mdi:bulldozer" data-flip="horizontal"
+    /></span>
+    <div class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">
+      Email Development Panal
+    </div>
+  </div>
+  <div class="example-parent">
+    <div class="example-origin">
+      <div
+        id="draggable-4"
+        class="example-draggable invisible"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        thing 4
+      </div>
+    </div>
+
+    <div
+      class="example-dropzone bg-white decoration-clone"
+      ondragover="onDragOver(event);"
+      ondrop="onDrop(event);"
+    ></div>
+  </div>
+</template>
+
+<script>
+import { Icon } from "@iconify/vue";
+export default {
+  components: {
+    Icon,
+  },
+  mounted() {},
+};
+</script>

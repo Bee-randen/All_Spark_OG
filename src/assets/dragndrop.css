@@ -1,0 +1,14 @@
+.example-draggable {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.example-dropzone {
+  border: 2px solid black;
+  flex-basis: 100%;
+  flex-grow: 1;
+  width: 600px;
+  margin: 20px;
+  padding-bottom: 300px;
+}

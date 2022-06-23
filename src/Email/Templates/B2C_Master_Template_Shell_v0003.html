@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="font-size: 14px;">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Client Resets -->
+
+    <style type="text/css">
+        @media yahoo {
+            table {
+                border-spacing: 0 !important;
+                border-collapse: collapse !important;
+                table-layout: fixed !important;
+                color: #333333;
+            }
+            table table table {
+                table-layout: auto;
+            }
+            table[align="center"] {
+                margin: 0 auto;
+            }
+            table.content-narrow,
+            table.HDR0105-narrow {
+                margin: 0 auto !important;
+            }
+            a {
+                margin: 0 auto;
+            }
+            p {
+                padding-bottom: 10px;
+            }
+            #backgroundTable {
+                margin: 0 auto;
+                padding: 0;
+                width: 100% !important;
+            }
+        }
+        /* Global Style Settings */
+        
+        a {
+            color: #0368D9;
+        }
+        
+        a:hover {
+            color: #0368D9;
+        }
+        
+        a:visited {
+            color: #0368D9 !important;
+        }
+        
+        h1 a:visited,
+        h2 a:visited,
+        h3 a:visited,
+        h4 a:visited,
+        h5 a:visited {
+            color: #333333 !important;
+        }
+        
+        .button a:hover,
+        .header-right a:hover,
+        .headline a:hover {
+            color: #ffffff !important;
+        }
+        
+        .button a:visited,
+        .header-right a:visited,
+        .headline a:visited {
+            color: #ffffff !important;
+        }
+        
+        p {
+            line-height: 18px;
+        }
+        
+        .gradient-blue-vertical {
+            background: -webkit-linear-gradient(top, #00409C 0%, #0676F2 100%);
+            background: -moz-linear-gradient(top, #00409C 0%, #0676F2 100%);
+            background: -o-linear-gradient(top, #00409C 0%, #0676F2 100%);
+            background: linear-gradient(top, #00409C 0%, #0676F2 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00409C', endColorstr='#0676F2', GradientType=1);
+        }
+        /*.gradient-navy-horizontal {
+	background: -moz-linear-gradient(left, #3555a3 0%, #1c3385 100%);
+	background: -webkit-linear-gradient(left, #3555a3 0%, #1c3385 100%);
+	background: -o-linear-gradient(left, #3555a3 0%, #1c3385 100%);
+	background: linear-gradient(left, #3555a3 0%, #1c3385 100%);
+ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3555A3', endColorstr='#1C3385', GradientType=0);
+}
+*/
+        /* iOS link style override */
+        
+        .ios_link a {
+            color: inherit !important;
+            text-decoration: none !important;
+            line-height: inherit !important;
+            pointer-events: none !important;
+            cursor: default !important;
+        }
+    </style>
+    <!-- Fonts -->
+     <style type="text/css">
+      @font-face {
+	font-family: 'Avenir Next';
+	src: url('da92a44f-8e1d-4248-ba7b-b12c91a118a9.woff2') format('woff2'),
+		url('b679252b-1f50-49c3-9b2e-002bb8827c2e.woff') format('woff');
+	font-weight: 250;
+	font-style: normal;
+		  mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('0930f14e-7d95-4e17-8323-80b9a8a6a8c8.woff2') format('woff2'),
+		url('27711a40-7975-4707-a301-552acc0c79ad.woff') format('woff');
+	font-weight: 250;
+	font-style: italic;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('f64c3634-1027-4aec-8bd4-d96f2444f559.woff2') format('woff2'),
+		url('91f23395-35b5-470e-9680-45d860e84f5b.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('9d625b17-c3f0-46d8-88cf-8fc52fed6638.woff2') format('woff2'),
+		url('22e2f1bc-c893-4f6f-8f06-0ff76ae7b041.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('a1049d00-54ad-4589-95b8-d353f7ab52f0.woff2') format('woff2'),
+		url('13faf0ae-dcab-4d1c-9c08-f9ca339b6023.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('380e5a25-9a4b-439d-9d73-2e3781a94505.woff2') format('woff2'),
+		url('c1b751c0-be11-4806-8863-ddbe9e714437.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('8c6d7851-9978-4520-8c8f-dc1b38b36eb6.woff2') format('woff2'),
+		url('73fd8503-a80c-4965-97ae-a1178b2caad0.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('6a12c14f-17ec-4f35-a40b-6cc18a8c5057.woff2') format('woff2'),
+		url('b17e8320-4836-47c0-aaa3-68d425dfeb40.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('9544095b-fbf6-4d50-870f-a5102776eae4.woff2') format('woff2'),
+		url('7c22a3c2-6fb4-4dbf-9112-53b06942662a.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('82eb5ca5-8702-4bb5-ac8d-6c33995824fb.woff2') format('woff2'),
+		url('f61d18ba-8ac6-49d7-8581-4ff520a9fe06.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('c2abd1c4-1332-43d3-a7d0-c24c359d2bb8.woff2') format('woff2'),
+		url('888f1b57-0692-499d-91f0-718136703ef4.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;mso-font-alt: 'Arial';
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('ec5598d7-82d9-449f-a448-f608720cd609.woff2') format('woff2'),
+		url('cd2cf773-80b7-421c-88c9-78c9f9cb3d75.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;mso-font-alt: 'Arial';
+}
+
+    </style>
+    <!-- Media Queries -->
+    <style type="text/css">
+        @media only screen and (max-width: 600px) {
+            table.body {
+                max-width: 600px;
+                margin: auto;
+            }
+            table.body>tbody>tr>td {
+                padding: 0 15px;
+            }
+            table td.width-25,
+            table td.width-33,
+            table td.width-50,
+            table td.width-66,
+            table td.width-75,
+            table td.width-150px,
+            table td.width-280px,
+            table td.width-295px,
+            table td.width-320px,
+            table td.width-450px,
+            table td.vertical-spacer {
+                width: 100% !important;
+                display: block;
+            }
+            table td.vertical-spacer {
+                padding: 5px 0 !important;
+            }
+            table.content-narrow {
+                width: auto !important;
+                margin: 0 20px !important;
+            }
+            table.HDR0105-narrow {
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            table.HDR0105-narrow .header-right,
+            table.HDR0105-narrow .header-left {
+                width: 100vw !important;
+                margin: 0 20px !important;
+                text-align: center !important;
+            }
+            table.HDR0105-narrow .header-left {
+                padding: 15px 0 0 0 !important;
+            }
+            table.HDR0105-narrow .header-right h1 {
+                padding: 5px 0 0 !important;
+                font-size: 60px !important;
+                line-height: 60px !important;
+                line-height: 62px !important;
+            }
+            table.HDR0105-narrow .header-right h4 {
+                padding: 0 !important;
+                margin: 0 !important;
+                font-size: 14px !important;
+            }
+            table.connect a {
+                padding: 0 5px !important;
+            }
+            .mobile-m-top--15 {
+                margin-top: -15px;
+            }
+            .collapse-mobile {
+                width: 0% !important;
+                display: none !important;
+            }
+            table.header-1010 .content-narrow {
+                width: 100% !important;
+                margin: 0 auto;
+            }
+            table.header-1010 .image-wrapper {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            table.header-1030 .header h1 {
+                font-size: 18px;
+                line-height: 20px;
+                padding-right: 9px;
+            }
+            table.header-1030 .header h1 strong {
+                font-size: 18px;
+            }
+            table.header-1030 .width-25,
+            table.header-1030 .width-75 {
+                display: table-cell;
+            }
+            table.header-1030 .width-25 {
+                width: 33.333% !important;
+            }
+            table.header-1030 .width-75 {
+                width: 66.666% !important;
+            }
+            table.header-1080 .header {
+                width: 100% !important;
+                margin: 0 auto;
+            }
+            table.header-1080 .header .image-wrapper {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            table.header-1080 .content-narrow td.bg-uo-blue,
+            table.header-1010 .content-narrow td.bg-uo-blue {
+                background-color: transparent !important;
+            }
+            #narrow-logo.content-narrow {
+                width: auto !important;
+                margin: 0 auto !important;
+            }
+            table.footer-4050 td.width-50 {
+                width: 50% !important;
+                display: table-cell !important;
+                padding: 15px;
+            }
+            table.footer-4050 td.width-50.collapse-mobile {
+                width: 0% !important;
+                display: none !important;
+            }
+            table.footer-4060 td.width-33 {
+                width: 33.333% !important;
+                display: table-cell !important;
+                padding: 15px;
+            }
+            td.force-img-expand img {
+                width: 100% !important;
+                display: block;
+            }
+            .solid-cta-btn {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 360px;
+                text-align: center;
+            }
+            .outline-cta-btn {
+                margin: 0 auto !important;
+                padding: 0 !important;
+                max-width: 360px;
+                text-align: center !important;
+                display: block;
+                align-content: center;
+            }
+            .cta-phone {
+                cursor: pointer !important;
+                pointer-events: auto !important;
+            }
+            .xl {
+                font-size: 50px !important;
+                line-height: 55px !important;
+                text-align: center;
+                padding: 10px 0 0 0 !important;
+            }
+            .subheading {
+                text-align: center;
+                padding: 0 !important;
+            }
+			.uoap-subheading {
+				font-size:18px !important;
+				line-height: 18px !important;
+			}
+        }
+        
+        .displaynone {
+            display: none;
+        }
+    </style>
+    <!--[if (mso)|(IE)]>
+<style type="text/css">
+body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+</style>
+<![endif]-->
+    <!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+</head>
+
+<body style="background: #FFFFFF; color: #333333; font-family: 'Avenir Next','Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 18px; margin: 0; padding: 0; text-align: left;">
+    <table id="backgroundTable" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #FFFFFF; border: 0; border-collapse: collapse; border-spacing: 0;">
+        <tr>
+            <td>
+                <!-- Outlook and Lotus Notes don't support max-width but are always on desktop, so we can enforce a wide, fixed width view. -->
+                <!-- Beginning of Outlook-specific wrapper : BEGIN -->
+
+                <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td>
+        <![endif]-->
+
+                <!-- Beginning of Outlook-specific wrapper : END -->
+
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" class="body" role="presentation" bgcolor="#FFFFFF" style="background-color: #FFFFFF; border: 0; border-collapse: collapse; border-spacing: 0; margin: auto; max-width: 600px;">
+                    <tr>
+                        <td>
+                            <!-- START PREHEADER EN ONLY-->
+
+                            <table class="head-links font-basic" style="border: 0; border-collapse: collapse; border-spacing: 0; font-family: Arial, Helvetica, sans-serif !important; font-size: 12px;">
+                                <tr>
+                                    <td style="padding: 10px 20px 0 20px;"><a href="#" target="_blank" alias="edc" style="color: #0368D9;">Experience Excitement at Universal Orlando Resorts.</a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 5px; padding: 0px 20px 10px 20px;"><a target="_blank" href="%%view_email_url%%" alias="view_in_browser" style="color: #0368D9;">View Online</a></td>
+                                </tr>
+                            </table>
+
+                            <!-- END PREHEADER EN ONLY-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Include components here -->
+
+                            <!-- Begin Header Section -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- End Header Section -->
+
+                            <!-- Begin Body Section -->
+
+                            <!-- Body Section 1-->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 1 -->
+
+                            <!-- Body Section 2 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 2 -->
+
+                            <!-- Body Section 3 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 3 -->
+
+                            <!-- Body Section 4 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 4 -->
+
+                            <!-- Body Section 5 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 5 -->
+
+                            <!-- Body Section 6 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 6 -->
+
+                            <!-- Body Section 7 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 7 -->
+
+                            <!-- Body Section 8 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 8 -->
+
+                            <!-- Body Section 9 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 9 -->
+
+                            <!-- Body Section 10 -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- Content Goes Here -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Body Sections 10 -->
+
+                            <!-- End Body Section -->
+
+                            <!-- START Common Footer Content -->
+
+                            <!-- Begin Social here -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <table class="connect" width="100%" role="presentation" style="border: 0; border-collapse: collapse; border-spacing: 0;">
+                                            <tr>
+                                                <td align="center" class="p-lr-20" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
+                                                    <p style="margin-top: 0; margin-bottom:15px; font-size:14px; line-height:18px;"><strong>Connect with us</strong></p>
+
+                                                    <!-- Beginning of Outlook-specific wrapper : BEGIN -->
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+<table width="280" align="center" cellpadding="0" cellspacing="0" border="0">
+<tr>
+    <td>
+<![endif]-->
+
+                                                    <a href="https://www.facebook.com/UniversalOrlandoResort" target="_blank" style="color: #0368D9; padding: 0 10px; text-decoration: none;"><img src="http://emailassets.nbcuni.com/universalorlando/perm/CRM/2018/global/social-facebook.png" width="30" height="30" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="Facebook"> </a>
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    <td>
+<![endif]-->
+
+                                                    <a href="https://twitter.com/UniversalORL" target="_blank" style="color: #0368D9; padding: 0 10px; text-decoration: none;"><img src="http://emailassets.nbcuni.com/universalorlando/perm/CRM/2018/global/social-twitter.png" width="30" height="30" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="Twitter"> </a>
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    <td>
+<![endif]-->
+
+                                                    <a href="http://instagram.com/universalorlando" target="_blank" style="color: #0368D9; padding: 0 10px; text-decoration: none;"><img src="http://emailassets.nbcuni.com/universalorlando/perm/CRM/2018/global/social-instagram.png" width="30" height="30" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="Instagram"> </a>
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    <td>
+<![endif]-->
+
+                                                    <a href="https://www.pinterest.com/universalorl/" target="_blank" style="color: #0368D9; padding: 0 10px; text-decoration: none;"><img src="http://emailassets.nbcuni.com/universalorlando/perm/CRM/2018/global/social-pinterest.png" width="30" height="30" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="Pinterest"> </a>
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    <td>
+<![endif]-->
+
+                                                    <a href="https://www.youtube.com/user/UniversalOrlando" target="_blank" style="color: #0368D9; padding: 0 10px; text-decoration: none;"><img src="http://emailassets.nbcuni.com/universalorlando/perm/CRM/2018/global/social-youtube.png" width="30" height="30" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="YouTube"> </a>
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+    </td>
+</tr>
+</table>
+<![endif]-->
+
+                                                    <div class="divider" style="border-bottom: 2px solid #FFFFFF; mso-border-bottom-alt:solid #FFFFFF 1.5pt;  line-height:2px; margin-bottom: 15px; padding-bottom: 15px;">&nbsp;</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- End Social here -->
+
+                            <!-- Begin App here -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- START Download App Module 4080 -->
+
+                                        <table class="app" width="100%" role="presentation" style="border: 0; border-collapse: collapse; border-spacing: 0;">
+                                            <tr>
+                                                <td align="center" class="p-20" style="padding: 20px;">
+                                                    <p style="margin-top: 0; margin-bottom:15px; font-size:14px; line-height:18px;"><strong>Download the Official Universal Orlando Resort App</strong></p>
+
+                                                    <!-- Beginning of Outlook-specific wrapper : BEGIN -->
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+<table width="280" align="center" cellpadding="0" cellspacing="0" border="0">
+<tr>
+    <td>
+<![endif]-->
+
+                                                    <a href="https://itunes.apple.com/us/app/official-universal-orlando/id878217080?ls=1&mt=8" target="_blank" style="color: #333333; text-decoration: none;"><img src="http://emailassets.nbcuni.com/universalorlando/perm/CRM/2018/global/apple-store.png" width="128" height="43" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="Download on the Apple App Store"> </a>
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    <td>
+<![endif]-->
+
+                                                    <a href="https://play.google.com/store/apps/details?id=com.universalstudios.orlandoresort" target="_blank" style="color: #333333; text-decoration: none;"><img src="http://emailassets.nbcuni.com/universalorlando/perm/CRM/2018/global/google-play.png" width="144" height="43" style="margin:0; padding:0; border:none; display:inline-block;" border="0" alt="Get it on Google Play"> </a>
+
+                                                    <!--[if (gte mso 9)|(IE)]>
+    </td>
+</tr>
+</table>
+<![endif]-->
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- END Download App Module 4080 -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- End App here -->
+
+                            <!-- Begin Copyright here -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- START COPYRIGHT Module -->
+
+                                        <table class="legal font-basic" width="100%" role="presentation" style="border: 0; border-collapse: collapse; border-spacing: 0; font-family: Arial, Helvetica, sans-serif !important; font-size: 12px;">
+                                            <tr>
+                                                <td class="p-lr-20" style="padding:0 20px 10px 20px;">
+                                                    <p style="font-size: 10px; font-weight: lighter; line-height: 12px; margin: 0; margin-bottom: 0; padding:0;"> &copy; 2021 copyright legal line example</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- END COPYRIGHT Module -->
+
+                                        <!-- START COPYRIGHT Module -->
+
+                                        <table class="legal font-basic" width="100%" role="presentation" style="border: 0; border-collapse: collapse; border-spacing: 0; font-family: Arial, Helvetica, sans-serif !important; font-size: 12px;">
+                                            <tr>
+                                                <td class="p-lr-20" style="padding:0 20px 10px 20px;">
+                                                    <p style="font-size: 10px; font-weight: lighter; line-height: 12px; margin: 0; margin-bottom: 0; padding:0;"> &copy; 2021 copyright 2nd legal line example</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- END COPYRIGHT Module -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- End Copyright here -->
+
+                            <!-- Legal -->
+
+                            <!-- Begin Legal here -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- START LEGAL LINES Module -->
+
+                                        <table class="legal font-basic" width="100%" role="presentation" style="border: 0; border-collapse: collapse; border-spacing: 0; font-family: Arial, Helvetica, sans-serif !important; font-size: 12px;">
+                                            <tr>
+                                                <td class="p-lr-20" style="padding:0 20px 10px 20px;">
+													<p style="font-size: 10px; font-weight: lighter; line-height: 12px; margin: 0; margin-bottom: 0; padding:0;"><span class="ios_link">*Single legal line example.</span></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- END LEGAL LINES Module -->
+                                        <!-- START LEGAL LINES Module -->
+
+                                        <table class="legal font-basic" width="100%" role="presentation" style="border: 0; border-collapse: collapse; border-spacing: 0; font-family: Arial, Helvetica, sans-serif !important; font-size: 12px;">
+                                            <tr>
+                                                <td class="p-lr-20" style="padding:0 20px 10px 20px;">
+                                                    <p style="font-size: 10px; font-weight: lighter; line-height: 12px; margin: 0; margin-bottom: 0; padding:0;"><span class="ios_link">*Single legal line example 2.</span></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- END LEGAL LINES Module -->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- End Legal here -->
+
+                            <!-- Begin CANSPAM here -->
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <!-- REPLACE WITH CANSPAM-->
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- End CANSPAM here -->
+                            <!-- START CAMPAIGN ID Module -->
+
+                            <table class="legal font-basic" width="100%" role="presentation" style="border: 0; border-collapse: collapse; border-spacing: 0; font-family: Arial, Helvetica, sans-serif !important; font-size: 12px;">
+                                <tr>
+                                    <td class="p-lr-20" style="padding-left: 20px; padding-right: 20px;">
+                                        <p style="font-size: 10px; font-weight: lighter; line-height: 12px; margin-top: 0;"><span class="ios_link">CampaignID<span id="Date">%%DF_Date%%</span><span id="DF_Version">%%DF_Version%%</span></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bottom-spacer" height="5" style="line-height: 5px; padding: 5px 0;"></td>
+                                </tr>
+                            </table>
+
+                            <!-- END CAMPAIGN ID Module -->
+                            <!-- END Common Footer Content -->
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- End of Outlook-specific wrapper : BEGIN -->
+
+                <!--[if (gte mso 9)|(IE)]>
+            	</td>
+            </tr>
+        </table>
+        <![endif]-->
+
+                <!-- End of Outlook-specific wrapper : END -->
+            </td>
+        </tr>
+    </table>
+    <div class="displaynone" style="color: #ffffff; display: none; font: 15px courier; line-height: 0; max-width: 600px !important; min-width: 600px !important; white-space: nowrap; width: 600px !important;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+</body>
+<custom name="opencounter" type="tracking"/>
+</html>
